@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <form action="/card_search" method="get">
+        <input autocomplete="off" autofocus name="searchbox" placeholder="Search for a card..." type="text">
+        <input type="submit">
+    </form>
+
+{% endblock %}
