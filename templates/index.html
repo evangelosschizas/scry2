@@ -1,10 +1,13 @@
 {% extends "layout.html" %}
 
 {% block body %}
-
+    
     <form action="/card_search" method="get">
-        <input autocomplete="off" autofocus name="searchbox" placeholder="Search for a card..." type="text">
-        <input type="submit">
+        <img src="/static/123967.hq.jpg" class=" img-fluid rounded mx-auto d-block" alt="...">
+        <div class="container w-25 p-0 text-center ms-auto position-absolute top-50 start-50 translate-middle input-group mb-3">
+            <input autocomplete="on" autofocus name="searchbox" class="form-control" placeholder="Search for a card... (eg. Black Lotus)" aria-label="Search for a card... (eg. Black Lotus)" aria-describedby="button-addon2" type="text">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
     </form>
 
 {% endblock %}
